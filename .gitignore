@@ -1,3 +1,18 @@
+#################
+## IDEA
+#################
+
+# User-specific stuff
+.idea/
+.idea_modules/
+*.iml
+*.DS_Store
+*.bin
+*.lock
+
+# IntelliJ
+out/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
