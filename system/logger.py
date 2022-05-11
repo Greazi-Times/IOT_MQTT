@@ -37,13 +37,6 @@ def add(data):
         # writing headers (field names)
         writer.writerow(data)
 
-
-
-
-
-
-
-
 # my data rows as dictionary objects
 mydict = [{'branch': 'COE', 'cgpa': '9.0', 'name': 'Nikhil', 'year': '2'},
           {'branch': 'COE', 'cgpa': '9.1', 'name': 'Sanchit', 'year': '2'},
