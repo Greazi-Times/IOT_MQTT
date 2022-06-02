@@ -50,5 +50,3 @@ while True:
             print(e)
 # ------ end new            
         utime.sleep(SLEEP)
-        
-        

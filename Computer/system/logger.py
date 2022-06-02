@@ -1,4 +1,5 @@
 import csv
+import Computer.computer_constants as constants
 from os.path import exists
 
 #----------------------------------------------------------------------------------#
@@ -6,7 +7,7 @@ from os.path import exists
 #----------------------------------------------------------------------------------#
 
 # name and place of the csv file
-filename = "../logs/systemLogs.csv"
+filename = str(constants.file)
 # Boolean to see if the file has been loaded
 setup = False
 # field names

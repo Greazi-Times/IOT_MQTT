@@ -1,0 +1,13 @@
+paho-mqtt~=1.6.1
+network~=0.1
+utime~=1.0.7
+numpy~=1.22.3
+pandas~=1.4.2
+scikit-learn~=1.0.2
+matplotlib~=3.5.2
+tables~=3.7.0
+tensorflow~=2.8.0
+h5py~=3.6.0
+scipy~=1.8.0
+carbontracker~=1.1.6
+yamlhparams~=0.2.0
