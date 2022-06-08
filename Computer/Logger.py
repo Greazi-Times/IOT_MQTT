@@ -1,5 +1,5 @@
 import csv
-import Computer.computer_constants as constants
+import computer_constants as constants
 from os.path import exists
 
 #----------------------------------------------------------------------------------#
@@ -7,11 +7,11 @@ from os.path import exists
 #----------------------------------------------------------------------------------#
 
 # name and place of the csv file
-filename = str(constants.file)
+filename = str(constants.file.logger)
 # Boolean to see if the file has been loaded
 setup = False
 # field names
-fields = ['Datum', 'Temp', 'Lucht Vochtigheid', 'Klep Stand']
+fields = ['Lucht Vochtigheid', 'Klep Stand']
 
 #----------------------------------------------------------------------------------#
 # Main systems

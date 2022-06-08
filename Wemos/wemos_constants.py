@@ -8,7 +8,11 @@ class mqtt:
     host = "192.168.2.128"
     port = 1883
     keepalive = 60
-    topic = "G7/VALVE"
+    valve_topic = "G7/VALVE"
+
+
+class system:
+    valves = 1
 
 # All Network related values
 class network:

@@ -1,5 +1,6 @@
 from umqttsimple import MQTTClient
 import ubinascii
+import Wemos.wemos_constants as constants
 
 
 # Na elke publish de topic en de msg oppakken

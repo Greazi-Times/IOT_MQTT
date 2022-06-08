@@ -10,7 +10,7 @@ from machine import ADC, Pin
 p2 = Pin(2, Pin.OUT)
 
 # Moisture components
-soil = ADC(Pin(26))
+soil = ADC(0)
 min_moisture = 0
 max_moisture = 65535
 
@@ -20,7 +20,7 @@ station.active(True)
 
 # Returns the values of the HW-390 Moisture Sensor
 def get_moisture():
-    return (max_moisture - soil.read_u16()) * 100 / (max_moisture - min_moisture)
+    return ((max_moisture-soil.read_u16())*100/(max_moisture-min_moisture))
 
 
 # Returns the value of the valve
@@ -55,7 +55,12 @@ while True:
 
                 # Get valve that return a 0 or a 1
                 valve = mqtt.get(constants.mqtt.topic)
-                p2(valve)
+
+                # A for loop that checks how many valves are connected to the system
+                for x in range(constants.system.valves):
+                    x += 2
+                    pin = Pin(x, Pin.OUT)
+                    pin(valve)
 
                 # Check print for console to see moisture and valve value's
                 print("Published Moisture: " + moisture + " Valve: " + valve)

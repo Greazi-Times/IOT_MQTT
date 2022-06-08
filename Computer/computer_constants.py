@@ -5,7 +5,7 @@
 
 # All file related values
 class file:
-    logger = "../logs/systemLogs.csv"
+    logger = "logs/systemLogs.csv"
 
 # All MQTT related values
 class mqtt:
